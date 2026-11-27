@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    background-color: white;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: black;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: black;
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+p {
+    color: black;
+    padding: 0rem 0.5rem 1rem 1rem;
+    margin: 0;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+}
+
+button {
+    font-size: 1.5rem;
+    margin: 1rem 0.5rem 0rem 1rem;
+}
+
+table {
+    width: 100%;
+}
+
+header {
+    display: block;
+    position: sticky;
+    top: 0;
+    background-color: #759161;
+    height: 10%;
+    overflow: hidden;
+    /*Overflow: hidden gör så det gröna alltid syns*/
+    padding-left: 15%;
+}
+
+footer {
+    display:block;
+    text-align: center;
+    background-color: #759161;
+    padding: 0.1em;
+    margin-top: 1.5em;
+    margin-bottom: 0;
+    padding: 1.5rem 0.1rem;
+}
+
+footer p {
+    padding: 0 0.5rem;
+}
+
+dl {
+    padding-left: 1rem;
+}
+
+dd {
+    padding-left: 1em;
+    padding-top: 0em;
+    padding-bottom: 0.3em;
+}
+td {
+    padding: 1.5em;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    /*max-width: 40rem;*/
+    width: 50%;
+    height: auto;
+    margin-top: 1.5rem;
+    /*Dessa två tillsammans gör så bilderna är centrerade*/
+}
+
+.equation {
+    padding-left: 5em;
+    padding-right: 5em;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    
+}
+
+.container {
+    /*Används där jag vill ha ett grid*/
+    display: grid;
+    /*grid-template-columns: 1fr 2fr 1.5fr 0.5fr;*/
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    top: 0;
+    padding: 2rem 0;
+    margin-top: 0;
+}
+
+.content {
+    grid-column-end: span 2;
+}
+
+.centerContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*Justify-content: center och align-items: center i en flex-div gör så dess innehåll 
+    blir centrerat både verikalt och horisontellt.*/
+}
+
+.gridimg {
+    width: 80%;
+    height: auto;
+}
+
+main {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.containerInterest {
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 0;
+    padding-top: 1em;
+}
+
+
+nav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 0.7% 1%;
+    font-size: 25px;
+    text-decoration: none;
+    /*Tar bort så länkarna är understrukna*/
+
+    padding-top: 0.5em;
+    padding-bottom: 0.7em;
+
+    border-radius: 1em;
+
+}
+
+#facts, #interests {
+    background-color: #dddddd;
+    display: block;
+    top: 0;
+    border: 3px solid blacK;
+    border-radius: 2.5em;
+    margin-right: 2em;
+    padding-top: 0em;
+    padding-bottom: 3em;
+    margin-left: 2em;
+    margin-top: 5em;
+    font-size: 1.3rem;
+    align-items: center;
+
+}
+
+#interests a {
+    text-decoration: none;
+}
+
+#interests a:hover {
+    background-color: #db8355;
+    color: white;
+}
+
+#interests h3, #interests ul, #interests li {
+    margin-left: 0.5em;
+}
+
+#interests h3 {
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+}
+
+#facts caption {
+    padding: 0em;
+    margin: 0em;
+    padding-right: 1em;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-block-start: 1em;
+    /*margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    display: block;*/
+}
+
+#interests h3 {
+    padding-right: 1em;
+    font-size: 2.0rem;
+}
+
+#facts th, #facts
+td, #facts table {
+    padding: 0.25em;
+    padding-left: 0.3em;
+    border: 2px solid black;
+    border-left: 0px;
+    border-right: 0px;
+
+    border-collapse: collapse;
+}
+
+#facts td:nth-child(even) {
+    border-left: 2px solid black;
+    /*Så det är en linje som separerar de två elementen på varje rad*/
+}
+
+#facts tr:nth-child(odd) {
+    td:nth-child(even) {
+        background-color: white;
+    }
+}
+
+#facts tr:nth-child(even) {
+    td:nth-child(odd) {
+        background-color: white;
+    }
+}
+
+/*De två ovan sätter så det blir ett sicksack-mönster med bakgrunden i faktarutan.*/
+
+
+nav a:hover, footer a:hover {
+    background-color: #db8355;
+    color: white;
+}
+
+
+#top {
+    text-align: center;
+    height: 20%;
+    display: block;
+    overflow: hidden;
+}
+

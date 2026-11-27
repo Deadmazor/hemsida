@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" , initial-scale=1.0>
+    <title>Matematik</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Hem</a>
+            <a href="Utbildningar.html">Utbildningar</a>
+            <a href="Intressen.html">Intressen</a>
+        </nav>
+    </header>
+    <main>
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Empty_Numbers_Table_0_to_100.png?width=960" alt="Nummertabell.">
+
+        <h2 style="text-align:center">Matematik</h2>
+        
+        <p>
+            Jag har ju läst matematik på universitetsnivå i flera år, så det är nog
+            inte förvånande att jag har matematik som ett stort intresse. Anledningen
+            till att jag slutade studera det var att jag inte ville bli matematiker,
+            men jag tycker fortfarande om att lära mig om matematik på fritiden.
+        </p>
+        <p>
+            Det jag är allra mest intresserad av inom matematik är bevis. Mitt
+            favorit-bevis (vilket kanske är en konstig sak att ha) är beviset för
+            att det finns ett oändligt antal primtal. Det första vi behöver göra
+            för att bevisa detta är att visa att om produkten av heltalet <i>p</i>
+            och heltalet <i>q</i> har egenskapen att <i>pq - 1</i> inte är delbart med
+            varken <i>p</i> eller <i>q</i>, om <i>p</i> och <i>q</i> är större än 1.
+        </p>
+        <div class="equation">
+            <p>
+                Antag att <i>p</i> är en delare till <i>pq - 1</i>. Per definition bör det
+                då finnas ett heltal <i>k</i> sådan att <i>pq - 1 = pk</i>.
+            </p>
+            <p>
+                Vi isolerar 1:
+            </p>
+            <p>
+                <i>pq - pk = 1</i>
+            </p>
+            <p>
+                <i>p(q - k) = 1</i>
+            </p>
+            <p>
+                Eftersom <i>q</i> och <i>k</i> båda är heltal så är <i>q - k</i> också
+                ett heltal. Så produkten av heltalen <i>p</i> och <i>q - k</i> ska
+                vara lika med 1. Men de enda heltalen som detta gäller för är om
+                både <i>p</i> och <i>q - k</i> är 1 eller -1.
+            </p>
+            <p>
+                Vi har dock sagt att <i>p</i> är större än 1. Alltså
+                är detta en motsägelse, och vi har bevisat att om heltalen <i>p</i>
+                och <i>q</i> båda är större än 1 så är inte <i>p</i> en delare till
+                <i>pq - 1</i>.
+            </p>
+            <p>
+                Vi kan nu testa om <i>q</i> kan vara en delare till <i>pq - 1</i>. Vi
+                antar att detta är fallet, och får då att det finns ett heltal <i>m</i>
+                sådan att <i>pq - 1 = qm</i>
+            </p>
+            <p>
+                Vi isolerar på samma sätt 1 och får:
+            </p>
+            <p>
+                <i>q(p - m) = 1</i>
+            </p>
+            <p>
+                Men på samma sätt som förut vet vi att <i>q</i> är större än 1, men för
+                att detta ska stämma så måste både <i>q</i> och <i>p - m</i> vara antingen
+                -1 eller 1.
+            </p>
+            <p>
+                Vi har alltså bevisat att varken <i>p</i> eller <i>q</i> som båda är heltal
+                större än 1 är delare i <i>pq - 1</i>.
+            </p>
+        </div>
+        <p>
+            Nu när vi har etablerat det beviset är vi redo att bevisa att det finns ett
+            oändligt antal primtal.
+        </p>
+        <div class="equation">
+            <p>
+                Säg att vi har upptäckt alla primtal <i>p<sub>1</sub>, p<sub>2</sub>,
+                    p<sub>3</sub>, ..., p<sub>m</sub></i>.
+            </p>
+            <p>
+                Vi skapar ett nytt tal <i>q</i> som definieras som <i>q = p<sub>1</sub>
+                    * p<sub>2</sub> * p<sub>3</sub> * ... * p<sub>m</sub></i>.
+            </p>
+            <p>
+                Vi subtraherar nu 1 från <i>q</i>, och får ett nytt tal som vi kallar
+                <i>r</i>, så <i>r = q - 1</i>.
+            </p>
+            <p>
+                Men nu har vi ett tal som inte är delbart med något av primtalen, eftersom
+                alla primtal är större än 1. Det innebär att antingen <i>r</i> är ett primtal,
+                eller så finns det ett primtal som är mindre än <i>r</i> som är delare till det.
+                Men vi sade ju att vi hade upptäckt alla primtal <i>p<sub>1</sub>, p<sub>2</sub>,
+                    p<sub>3</sub>, ..., p<sub>m</sub></i>.
+            </p>
+            <p>
+                Detta bevisar att det finns oändligt många primtal, eftersom vi har hittat
+                en motsägelse till att vi kan ha hittat alla primtal.
+            </p>
+        </div>
+        <p>
+            Tekniskt sett hade jag behövt bevisa att inget av heltalen större än 1
+            <i>p<sub>1</sub>, p<sub>2</sub>, p<sub>3</sub>, ..., p<sub>m</sub></i> är
+            delare till produkten av dem, men då jag har lite tajt deadline för den
+            här uppgiften så bevisade jag bara att det gäller för varje par av heltal
+            större än 1, så jag har egentligen inte bevisat helt och hållet att
+            det finns oändligt många primtal. Men ni får ta mitt ord för att
+            det går att bevisa, jag skulle bara behöva lägga lite mer tid på att
+            skriva ut beviset för att inget av heltalen som är större än 1 delar
+            produkten av dem alla!
+        </p>
+        <button id="randomBtn">Slumpa nytt intresse</button>
+    </main>
+    <footer>
+        <p>
+            Ett studentprojekt i Webbdesign, av Queue Blom vid Södertörns Högskola, 2026.
+            <a href="https://commons.wikimedia.org/wiki/File:Empty_Numbers_Table_0_to_100.png">Foto från Wikimedia
+                Commons</a> (TealComet, CC0).
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
